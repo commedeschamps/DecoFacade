@@ -12,4 +12,10 @@ public class MentorSupportDecorator extends CourseDecorator {
     private void addMentorSupport() {
         System.out.println("Providing mentor support for the course.");
     }
+
+    @Override
+    public void onCourseComplete() {
+        super.onCourseComplete();
+        System.out.println("Your mentor congratulates you on completion!");
+    }
 }

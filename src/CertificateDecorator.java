@@ -6,10 +6,15 @@ public class CertificateDecorator extends CourseDecorator {
     @Override
     public void deliverContent() {
         super.deliverContent();
-        addCertificate();
     }
 
-    private void addCertificate() {
-        System.out.println("Adding certificate to the course completion.");
+    @Override
+    public void onCourseComplete() {
+        super.onCourseComplete();
+        awardCertificate();
+    }
+
+    private void awardCertificate() {
+        System.out.println("Certificate awarded for completing: " + getCourseName());
     }
 }

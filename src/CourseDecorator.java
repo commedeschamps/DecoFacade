@@ -6,11 +6,17 @@ public abstract class CourseDecorator implements Course {
     }
 
     @Override
-    public  void deliverContent(){
+    public void deliverContent(){
         decoratedCourse.deliverContent();
     }
+
     @Override
     public String getCourseName() {
         return decoratedCourse.getCourseName();
+    }
+
+    @Override
+    public void onCourseComplete() {
+        decoratedCourse.onCourseComplete();
     }
 }

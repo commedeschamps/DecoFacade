@@ -7,4 +7,8 @@ public class Programming implements Course {
     public String getCourseName() {
         return "Programming Course";
     }
+
+    @Override
+    public void onCourseComplete() {
+    }
 }
