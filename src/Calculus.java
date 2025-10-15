@@ -9,6 +9,6 @@ public class Calculus implements Course {
     }
     @Override
     public void onCourseComplete() {
-        // Базовый курс не имеет дополнительных действий при завершении
+        // Base course does nothing on completion
     }
 }

@@ -28,6 +28,9 @@ public class StudentPortalFacade {
             courseProgress.put(course, 50);
             progressTracker.updateProgress(course, 50);
             notificationService.sendProgressNotification(50);
+            // Simulate reminder after some time
+
+            notificationService.sendReminderNotification();
         } else {
             System.out.println("You are not enrolled in this course.");
         }
@@ -53,5 +56,8 @@ public class StudentPortalFacade {
         for (Course course : enrolledCourses) {
             System.out.println(course.getCourseName() + ": " + courseProgress.get(course) + "%");
         }
+    }
+    public void showLeaderboard() {
+        Leaderboard.getInstance().displayLeaderboard();
     }
 }

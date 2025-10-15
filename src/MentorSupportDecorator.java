@@ -16,6 +16,6 @@ public class MentorSupportDecorator extends CourseDecorator {
     @Override
     public void onCourseComplete() {
         super.onCourseComplete();
-        System.out.println("Your mentor congratulates you on completion!");
+        System.out.println("Your mentor congratulates you on completion of" + getCourseName() + "Well Done!");
     }
 }

@@ -8,7 +8,7 @@ public class NotificationService{
     }
 
     public void sendCompletionNotification(){
-        System.out.println("Notification: Congratulations! You have finished this course!");
+        System.out.println("Notification: You have finished this course!");
     }
 
     public void sendReminderNotification(){
